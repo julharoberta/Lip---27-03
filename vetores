@@ -1,0 +1,48 @@
+1) Crie um código que leia 4 valores e calcule a média.
+
+import matplotlib.pyplot as grafico
+salario = []
+media = 0.0
+indice = 0
+limite = 4
+
+for indice in range(0,limite):
+  salario.append(float(input("Digite o valor do salário:")))
+
+for indice in range(0,limite):
+  media += salario[indice]
+
+meida = media/limite
+
+print(media)
+
+grafico.xlabel("Mês")
+grafico.ylabel("Salario")
+grafico.autoscale()
+grafico.plot(salario,color = 'red',marker='+',linestyle='-.')
+grafico.show()
+
+  ------------------------------------------------------------------------------------------------------
+
+  2) Crie um código que leia 5 valores e retorne o menor deles
+
+  vetor = []
+
+for i in range(5):
+  vetor.append(int(input("Digite um valor: ")))
+
+menor = vetor[0]
+
+for i in range(len(vetor)):
+  if menor < vetor[i]:
+    menor = vetor[i]
+
+for i in range(len(vetor)):
+  if menor < vetor[i]:
+    maior = vetor[i]
+
+
+print("O menor valor do vetor é: ",menor)
+print("O menor valor do vetor é: ",maior2)
+
+-------------------------------------------------------------------------------------------------------
